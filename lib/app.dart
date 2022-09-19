@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/onboard/base.dart';
 import 'screens/onboard/splash.dart';
 import 'themes/app_theme.dart';
 
@@ -10,7 +11,7 @@ class SarafuApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      home: const SarafuSplash(),
+      home: const Onboarding(),
     );
   }
 }

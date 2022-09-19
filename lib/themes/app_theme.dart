@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   //colors
-  static const Color black = Color(0xFF141416);
+  static const Color black = Color(0xFF000000);
   static const Color orange = Color(0xFFFFBD69);
   static const Color orangeDark = Color(0xFFFF7565);
 
@@ -12,16 +12,19 @@ class AppTheme {
   static const Color purpleDark = Color(0xFF221C29);
 
   static const Color darkBlue = Color(0xFF202040);
-  static const Color grey = Color(0xFF636363);
+  static const Color grey = Color(0xFF666666);
   static const Color darkBlueLight = Color(0xFF382843);
+
+  static const Color subtitleColor = Color(0xFF505050);
+  static const Color background = Color.fromARGB(255, 168, 21, 21);
 
   //text theme
   static TextTheme textTheme = const TextTheme(
     headline1: TextStyle(
       fontFamily: 'OpenSans',
-      fontSize: 38.4,
+      fontSize: 25,
       letterSpacing: -1.0,
-      color: orange,
+      color: black,
       fontWeight: FontWeight.w400,
     ),
     headline2: TextStyle(
@@ -61,10 +64,10 @@ class AppTheme {
     ),
     subtitle1: TextStyle(
       fontFamily: 'OpenSans',
-      fontSize: 15.3,
+      fontSize: 15,
       letterSpacing: 0.15,
-      color: white,
-      fontWeight: FontWeight.w500,
+      color: subtitleColor,
+      fontWeight: FontWeight.w400,
     ),
     subtitle2: TextStyle(
       fontFamily: 'OpenSans',
