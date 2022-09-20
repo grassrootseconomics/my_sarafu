@@ -4,6 +4,10 @@
 ### Dart ###
 # See https://www.dartlang.org/guides/libraries/private-files
 
+# FVM
+.fvm/
+.vscode/
+
 # Files and directories created by pub
 .dart_tool/
 .packages
@@ -366,3 +370,5 @@ stage3/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.ja
 /ios/Podfile
 /android/app/release/app-release.aab
 /android/app/release/output-metadata.json
+ios/Runner.xcodeproj/project.pbxproj
+ios/Runner.xcworkspace/contents.xcworkspacedata
