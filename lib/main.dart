@@ -1,8 +1,10 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'constants/color_schemes.dart';
 import 'constants/custom_color.dart';
+import 'screens/authentication/verification.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,18 +34,24 @@ class MyApp extends StatelessWidget {
           darkScheme = darkColorScheme;
         }
 
-        return MaterialApp(
-          theme: ThemeData(
-            useMaterial3: true,
-            colorScheme: lightScheme,
-            extensions: [lightCustomColors],
+        return ScreenUtilInit(
+          designSize: const Size(375, 812),
+          minTextAdapt: true,
+          splitScreenMode: false,
+          builder: (context, child) => MaterialApp(
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              useMaterial3: true,
+              colorScheme: lightScheme,
+              extensions: [lightCustomColors],
+            ),
+            darkTheme: ThemeData(
+              useMaterial3: true,
+              colorScheme: darkScheme,
+              extensions: [darkCustomColors],
+            ),
+            home: const VerifyIdentity(),
           ),
-          darkTheme: ThemeData(
-            useMaterial3: true,
-            colorScheme: darkScheme,
-            extensions: [darkCustomColors],
-          ),
-          home: const Home(),
         );
       },
     );
@@ -71,7 +79,6 @@ class Home extends StatelessWidget {
             ],
           ),
         ),
-        floatingActionButton:
-            FloatingActionButton(onPressed: () => {}, tooltip: 'Increment'));
+        floatingActionButton: FloatingActionButton(onPressed: () => {}, tooltip: 'Increment'));
   }
 }

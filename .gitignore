@@ -366,3 +366,9 @@ stage3/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.ja
 /ios/Podfile
 /android/app/release/app-release.aab
 /android/app/release/output-metadata.json
+.fvm/flutter_sdk
+.fvm/fvm_config.json
+.vscode/settings.json
+.fvm/
+ios/Runner.xcodeproj/project.pbxproj
+ios/Runner.xcworkspace/contents.xcworkspacedata
