@@ -1,16 +1,25 @@
-# grassroots_flutter
+<p align="center">
+  <img src="./docs/assets/logo.svg" />
+</p>
+<h1 align="center">mySarafu</h1>
 
-A new Flutter project.
+[![Here Be Dragons](https://img.shields.io/badge/Here%20be%20Dragons-%F0%9F%90%89-success&color=white&)](https://en.wikipedia.org/wiki/Here_be_dragons)
+![Maturity](https://img.shields.io/badge/maturity-alpha-red)
 
-## Getting Started
+> **mySarafu** is currently in **Alpha**. There are alot of features missing and features will break in the future.
 
-This project is a starting point for a Flutter application.
+## About
 
-A few resources to get you started if this is your first Flutter project:
+mySarafu is a non-custodial mobile application to interact with the Network **Sarafu Network** built by _[Grassroots Economics](https://www.grassrootseconomics.org/)_
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- _[Grassroots Docs](http://docs.grassecon.org/)_
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you would would like to help out with this project, please create an issue describing what areas you are interested in helping out with.
+
+## License
+
+mySarafu is licensed under AGPL-3.0.
+
+## Tooling
+
+This project is tested with BrowserStack.
