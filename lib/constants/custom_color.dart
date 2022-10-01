@@ -11,14 +11,14 @@ const onboardHeadingColor = Color(0xFF032E9A);
 const splashHeadingColor = Color(0xFF213656);
 const onboardTextColor = Color(0xFF213656);
 
-Color lightgreenshede = Color(0xFFF0FAF6);
-Color lightgreenshede1 = Color(0xFFB2D9CC);
-Color greenshede0 = Color(0xFF66A690);
-Color greenshede1 = Color(0xFF93C9B5);
-Color primarygreen = Color(0xFF1E3A34);
-Color grayshade = Color(0xFF93B3AA);
-Color colorAcent = Color(0xFF78C2A7);
-Color cyanColor = Color(0xFF6D7E6E);
+Color lightgreenshede = const Color(0xFFF0FAF6);
+Color lightgreenshede1 = const Color(0xFFB2D9CC);
+Color greenshede0 = const Color(0xFF66A690);
+Color greenshede1 = const Color(0xFF93C9B5);
+Color primarygreen = const Color(0xFF1E3A34);
+Color grayshade = const Color(0xFF93B3AA);
+Color colorAcent = const Color(0xFF78C2A7);
+Color cyanColor = const Color(0xFF6D7E6E);
 
 const kAnimationDuration = Duration(milliseconds: 200);
 
@@ -170,38 +170,28 @@ class CustomColors extends ThemeExtension<CustomColors> {
       sourcecustomcolor1: sourcecustomcolor1 ?? this.sourcecustomcolor1,
       customcolor1: customcolor1 ?? this.customcolor1,
       oncustomcolor1: oncustomcolor1 ?? this.oncustomcolor1,
-      customcolor1Container:
-          customcolor1Container ?? this.customcolor1Container,
-      oncustomcolor1Container:
-          oncustomcolor1Container ?? this.oncustomcolor1Container,
+      customcolor1Container: customcolor1Container ?? this.customcolor1Container,
+      oncustomcolor1Container: oncustomcolor1Container ?? this.oncustomcolor1Container,
       sourceCustomcolor2: sourceCustomcolor2 ?? this.sourceCustomcolor2,
       customcolor2: customcolor2 ?? this.customcolor2,
       onCustomcolor2: onCustomcolor2 ?? this.onCustomcolor2,
-      customcolor2Container:
-          customcolor2Container ?? this.customcolor2Container,
-      onCustomcolor2Container:
-          onCustomcolor2Container ?? this.onCustomcolor2Container,
+      customcolor2Container: customcolor2Container ?? this.customcolor2Container,
+      onCustomcolor2Container: onCustomcolor2Container ?? this.onCustomcolor2Container,
       sourceCustomcolor3: sourceCustomcolor3 ?? this.sourceCustomcolor3,
       customcolor3: customcolor3 ?? this.customcolor3,
       onCustomcolor3: onCustomcolor3 ?? this.onCustomcolor3,
-      customcolor3Container:
-          customcolor3Container ?? this.customcolor3Container,
-      onCustomcolor3Container:
-          onCustomcolor3Container ?? this.onCustomcolor3Container,
+      customcolor3Container: customcolor3Container ?? this.customcolor3Container,
+      onCustomcolor3Container: onCustomcolor3Container ?? this.onCustomcolor3Container,
       sourceCustomcolor4: sourceCustomcolor4 ?? this.sourceCustomcolor4,
       customcolor4: customcolor4 ?? this.customcolor4,
       onCustomcolor4: onCustomcolor4 ?? this.onCustomcolor4,
-      customcolor4Container:
-          customcolor4Container ?? this.customcolor4Container,
-      onCustomcolor4Container:
-          onCustomcolor4Container ?? this.onCustomcolor4Container,
+      customcolor4Container: customcolor4Container ?? this.customcolor4Container,
+      onCustomcolor4Container: onCustomcolor4Container ?? this.onCustomcolor4Container,
       sourceCustomcolor5: sourceCustomcolor5 ?? this.sourceCustomcolor5,
       customcolor5: customcolor5 ?? this.customcolor5,
       onCustomcolor5: onCustomcolor5 ?? this.onCustomcolor5,
-      customcolor5Container:
-          customcolor5Container ?? this.customcolor5Container,
-      onCustomcolor5Container:
-          onCustomcolor5Container ?? this.onCustomcolor5Container,
+      customcolor5Container: customcolor5Container ?? this.customcolor5Container,
+      onCustomcolor5Container: onCustomcolor5Container ?? this.onCustomcolor5Container,
     );
   }
 
@@ -211,46 +201,31 @@ class CustomColors extends ThemeExtension<CustomColors> {
       return this;
     }
     return CustomColors(
-      sourcecustomcolor1:
-          Color.lerp(sourcecustomcolor1, other.sourcecustomcolor1, t),
+      sourcecustomcolor1: Color.lerp(sourcecustomcolor1, other.sourcecustomcolor1, t),
       customcolor1: Color.lerp(customcolor1, other.customcolor1, t),
       oncustomcolor1: Color.lerp(oncustomcolor1, other.oncustomcolor1, t),
-      customcolor1Container:
-          Color.lerp(customcolor1Container, other.customcolor1Container, t),
-      oncustomcolor1Container:
-          Color.lerp(oncustomcolor1Container, other.oncustomcolor1Container, t),
-      sourceCustomcolor2:
-          Color.lerp(sourceCustomcolor2, other.sourceCustomcolor2, t),
+      customcolor1Container: Color.lerp(customcolor1Container, other.customcolor1Container, t),
+      oncustomcolor1Container: Color.lerp(oncustomcolor1Container, other.oncustomcolor1Container, t),
+      sourceCustomcolor2: Color.lerp(sourceCustomcolor2, other.sourceCustomcolor2, t),
       customcolor2: Color.lerp(customcolor2, other.customcolor2, t),
       onCustomcolor2: Color.lerp(onCustomcolor2, other.onCustomcolor2, t),
-      customcolor2Container:
-          Color.lerp(customcolor2Container, other.customcolor2Container, t),
-      onCustomcolor2Container:
-          Color.lerp(onCustomcolor2Container, other.onCustomcolor2Container, t),
-      sourceCustomcolor3:
-          Color.lerp(sourceCustomcolor3, other.sourceCustomcolor3, t),
+      customcolor2Container: Color.lerp(customcolor2Container, other.customcolor2Container, t),
+      onCustomcolor2Container: Color.lerp(onCustomcolor2Container, other.onCustomcolor2Container, t),
+      sourceCustomcolor3: Color.lerp(sourceCustomcolor3, other.sourceCustomcolor3, t),
       customcolor3: Color.lerp(customcolor3, other.customcolor3, t),
       onCustomcolor3: Color.lerp(onCustomcolor3, other.onCustomcolor3, t),
-      customcolor3Container:
-          Color.lerp(customcolor3Container, other.customcolor3Container, t),
-      onCustomcolor3Container:
-          Color.lerp(onCustomcolor3Container, other.onCustomcolor3Container, t),
-      sourceCustomcolor4:
-          Color.lerp(sourceCustomcolor4, other.sourceCustomcolor4, t),
+      customcolor3Container: Color.lerp(customcolor3Container, other.customcolor3Container, t),
+      onCustomcolor3Container: Color.lerp(onCustomcolor3Container, other.onCustomcolor3Container, t),
+      sourceCustomcolor4: Color.lerp(sourceCustomcolor4, other.sourceCustomcolor4, t),
       customcolor4: Color.lerp(customcolor4, other.customcolor4, t),
       onCustomcolor4: Color.lerp(onCustomcolor4, other.onCustomcolor4, t),
-      customcolor4Container:
-          Color.lerp(customcolor4Container, other.customcolor4Container, t),
-      onCustomcolor4Container:
-          Color.lerp(onCustomcolor4Container, other.onCustomcolor4Container, t),
-      sourceCustomcolor5:
-          Color.lerp(sourceCustomcolor5, other.sourceCustomcolor5, t),
+      customcolor4Container: Color.lerp(customcolor4Container, other.customcolor4Container, t),
+      onCustomcolor4Container: Color.lerp(onCustomcolor4Container, other.onCustomcolor4Container, t),
+      sourceCustomcolor5: Color.lerp(sourceCustomcolor5, other.sourceCustomcolor5, t),
       customcolor5: Color.lerp(customcolor5, other.customcolor5, t),
       onCustomcolor5: Color.lerp(onCustomcolor5, other.onCustomcolor5, t),
-      customcolor5Container:
-          Color.lerp(customcolor5Container, other.customcolor5Container, t),
-      onCustomcolor5Container:
-          Color.lerp(onCustomcolor5Container, other.onCustomcolor5Container, t),
+      customcolor5Container: Color.lerp(customcolor5Container, other.customcolor5Container, t),
+      onCustomcolor5Container: Color.lerp(onCustomcolor5Container, other.onCustomcolor5Container, t),
     );
   }
 
@@ -289,38 +264,28 @@ class CustomColors extends ThemeExtension<CustomColors> {
       sourcecustomcolor1: sourcecustomcolor1!.harmonizeWith(dynamic.primary),
       customcolor1: customcolor1!.harmonizeWith(dynamic.primary),
       oncustomcolor1: oncustomcolor1!.harmonizeWith(dynamic.primary),
-      customcolor1Container:
-          customcolor1Container!.harmonizeWith(dynamic.primary),
-      oncustomcolor1Container:
-          oncustomcolor1Container!.harmonizeWith(dynamic.primary),
+      customcolor1Container: customcolor1Container!.harmonizeWith(dynamic.primary),
+      oncustomcolor1Container: oncustomcolor1Container!.harmonizeWith(dynamic.primary),
       sourceCustomcolor2: sourceCustomcolor2!.harmonizeWith(dynamic.primary),
       customcolor2: customcolor2!.harmonizeWith(dynamic.primary),
       onCustomcolor2: onCustomcolor2!.harmonizeWith(dynamic.primary),
-      customcolor2Container:
-          customcolor2Container!.harmonizeWith(dynamic.primary),
-      onCustomcolor2Container:
-          onCustomcolor2Container!.harmonizeWith(dynamic.primary),
+      customcolor2Container: customcolor2Container!.harmonizeWith(dynamic.primary),
+      onCustomcolor2Container: onCustomcolor2Container!.harmonizeWith(dynamic.primary),
       sourceCustomcolor3: sourceCustomcolor3!.harmonizeWith(dynamic.primary),
       customcolor3: customcolor3!.harmonizeWith(dynamic.primary),
       onCustomcolor3: onCustomcolor3!.harmonizeWith(dynamic.primary),
-      customcolor3Container:
-          customcolor3Container!.harmonizeWith(dynamic.primary),
-      onCustomcolor3Container:
-          onCustomcolor3Container!.harmonizeWith(dynamic.primary),
+      customcolor3Container: customcolor3Container!.harmonizeWith(dynamic.primary),
+      onCustomcolor3Container: onCustomcolor3Container!.harmonizeWith(dynamic.primary),
       sourceCustomcolor4: sourceCustomcolor4!.harmonizeWith(dynamic.primary),
       customcolor4: customcolor4!.harmonizeWith(dynamic.primary),
       onCustomcolor4: onCustomcolor4!.harmonizeWith(dynamic.primary),
-      customcolor4Container:
-          customcolor4Container!.harmonizeWith(dynamic.primary),
-      onCustomcolor4Container:
-          onCustomcolor4Container!.harmonizeWith(dynamic.primary),
+      customcolor4Container: customcolor4Container!.harmonizeWith(dynamic.primary),
+      onCustomcolor4Container: onCustomcolor4Container!.harmonizeWith(dynamic.primary),
       sourceCustomcolor5: sourceCustomcolor5!.harmonizeWith(dynamic.primary),
       customcolor5: customcolor5!.harmonizeWith(dynamic.primary),
       onCustomcolor5: onCustomcolor5!.harmonizeWith(dynamic.primary),
-      customcolor5Container:
-          customcolor5Container!.harmonizeWith(dynamic.primary),
-      onCustomcolor5Container:
-          onCustomcolor5Container!.harmonizeWith(dynamic.primary),
+      customcolor5Container: customcolor5Container!.harmonizeWith(dynamic.primary),
+      onCustomcolor5Container: onCustomcolor5Container!.harmonizeWith(dynamic.primary),
     );
   }
 }

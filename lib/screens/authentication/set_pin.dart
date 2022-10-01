@@ -30,11 +30,11 @@ class _PinSetUpState extends State<PinSetUp> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Spacer(flex: 1),
-              Icon(Icons.lock, size: 80.sp, color: customcolor1),
+              Icon(Icons.lock, size: 60.sp, color: customcolor1),
               yMargin25,
               Text(
                 'Set your Pin',
-                style: TextStyle(fontSize: 20.sp, color: customcolor3),
+                style: TextStyle(fontSize: 17.sp, color: customcolor3),
               ),
               const Spacer(flex: 2),
               PinCodeTextField(
