@@ -6,6 +6,21 @@ const customcolor2 = Color(0xFF0BB79E);
 const customcolor3 = Color(0xFF213656);
 const customcolor4 = Color(0xFFF9F6F2);
 const customcolor5 = Color(0xFF12F9E7);
+const primaryColor = Color(0xFF474FCB);
+const onboardHeadingColor = Color(0xFF032E9A);
+const splashHeadingColor = Color(0xFF213656);
+const onboardTextColor = Color(0xFF213656);
+
+Color lightgreenshede = Color(0xFFF0FAF6);
+Color lightgreenshede1 = Color(0xFFB2D9CC);
+Color greenshede0 = Color(0xFF66A690);
+Color greenshede1 = Color(0xFF93C9B5);
+Color primarygreen = Color(0xFF1E3A34);
+Color grayshade = Color(0xFF93B3AA);
+Color colorAcent = Color(0xFF78C2A7);
+Color cyanColor = Color(0xFF6D7E6E);
+
+const kAnimationDuration = Duration(milliseconds: 200);
 
 CustomColors lightCustomColors = const CustomColors(
   sourcecustomcolor1: Color(0xFF000099),
