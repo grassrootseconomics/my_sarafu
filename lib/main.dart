@@ -1,6 +1,8 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grassroots_flutter/screens/onboarding/onboard.dart';
+import 'package:grassroots_flutter/splash_screen.dart';
 
 import 'constants/color_schemes.dart';
 import 'constants/custom_color.dart';
@@ -43,14 +45,17 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(
               useMaterial3: true,
               colorScheme: lightScheme,
+              fontFamily: 'Roboto',
               extensions: [lightCustomColors],
             ),
             darkTheme: ThemeData(
               useMaterial3: true,
               colorScheme: darkScheme,
+              fontFamily: 'Roboto',
               extensions: [darkCustomColors],
             ),
-            home: const VerifyIdentity(),
+            home: const SplashScreen(),
+            // home: const VerifyIdentity(),
           ),
         );
       },
@@ -79,6 +84,7 @@ class Home extends StatelessWidget {
             ],
           ),
         ),
-        floatingActionButton: FloatingActionButton(onPressed: () => {}, tooltip: 'Increment'));
+        floatingActionButton:
+            FloatingActionButton(onPressed: () => {}, tooltip: 'Increment'));
   }
 }
