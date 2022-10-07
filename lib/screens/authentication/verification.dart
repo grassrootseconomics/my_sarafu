@@ -31,7 +31,8 @@ class _VerifyIdentityState extends State<VerifyIdentity> {
             width: MediaQuery.of(context).size.width,
             color: customcolor4,
             child: Padding(
-              padding: EdgeInsets.only(left: 15.w, right: 15.w, top: 60.h, bottom: 25.h),
+              padding: EdgeInsets.only(
+                  left: 15.w, right: 15.w, top: 60.h, bottom: 25.h),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 // mainAxisAlignment: MainAxisAlignment.center,
@@ -43,7 +44,8 @@ class _VerifyIdentityState extends State<VerifyIdentity> {
                     child: SizedBox(
                       height: 300.h,
                       width: double.infinity,
-                      child: Image.asset('assets/images/bro.png', fit: BoxFit.scaleDown),
+                      child: Image.asset('assets/images/bro.png',
+                          fit: BoxFit.scaleDown),
                     ),
                   ),
                   yMargin20,
@@ -77,7 +79,8 @@ class _VerifyIdentityState extends State<VerifyIdentity> {
                         physics: const NeverScrollableScrollPhysics(),
                         children: [
                           const EmailVerify(),
-                          PhoneVerify(phonenumberController: phonenumberController),
+                          PhoneVerify(
+                              phonenumberController: phonenumberController),
                         ],
                       ),
                     ),
@@ -101,10 +104,12 @@ class _VerifyIdentityState extends State<VerifyIdentity> {
                         children: [
                           Text(
                             'Send OTP',
-                            style: TextStyle(color: customcolor4, fontSize: 15.sp),
+                            style:
+                                TextStyle(color: customcolor4, fontSize: 15.sp),
                           ),
                           const SizedBox(width: 2),
-                          Icon(Icons.arrow_forward_ios_rounded, color: customcolor4, size: 15.sp),
+                          Icon(Icons.arrow_forward_ios_rounded,
+                              color: customcolor4, size: 15.sp),
                         ],
                       ),
                     ),
@@ -120,7 +125,8 @@ class _VerifyIdentityState extends State<VerifyIdentity> {
 }
 
 class PhoneVerify extends StatelessWidget {
-  const PhoneVerify({Key? key, required this.phonenumberController}) : super(key: key);
+  const PhoneVerify({Key? key, required this.phonenumberController})
+      : super(key: key);
 
   final TextEditingController phonenumberController;
 
@@ -132,13 +138,15 @@ class PhoneVerify extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
-            height: 55.h,
+            height: 57.h,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: customcolor1, width: 2),
             ),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 0,
+              ),
               child: InternationalPhoneNumberInput(
                 onInputChanged: (PhoneNumber number) {
                   // print(number.phoneNumber);
@@ -153,13 +161,15 @@ class PhoneVerify extends StatelessWidget {
                 ),
                 ignoreBlank: true,
                 autoValidateMode: AutovalidateMode.disabled,
-                selectorTextStyle: TextStyle(color: Colors.black, fontSize: 18.sp),
+                selectorTextStyle:
+                    TextStyle(color: Colors.black, fontSize: 18.sp),
                 spaceBetweenSelectorAndTextField: 0,
                 textFieldController: phonenumberController,
                 textStyle: TextStyle(color: Colors.black, fontSize: 20.sp),
                 textAlign: TextAlign.left,
                 formatInput: false,
-                keyboardType: const TextInputType.numberWithOptions(signed: true, decimal: true),
+                keyboardType: const TextInputType.numberWithOptions(
+                    signed: true, decimal: true),
                 inputBorder: InputBorder.none,
                 onSaved: (PhoneNumber number) {
                   // print('On Saved: $number');
@@ -183,7 +193,8 @@ class EmailVerify extends StatelessWidget {
       child: TextField(
         maxLines: 1,
         decoration: InputDecoration(
-          contentPadding: EdgeInsets.symmetric(vertical: 14.h, horizontal: 15.w),
+          contentPadding:
+              EdgeInsets.symmetric(vertical: 14.h, horizontal: 15.w),
           border: OutlineInputBorder(
             borderSide: const BorderSide(color: customcolor1, width: 2),
             borderRadius: BorderRadius.circular(10),
@@ -193,7 +204,10 @@ class EmailVerify extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
           ),
           labelText: 'Email Address',
-          labelStyle: GoogleFonts.roboto(fontSize: 17.sp, color: customcolor1, fontWeight: FontWeight.w600),
+          labelStyle: GoogleFonts.roboto(
+              fontSize: 17.sp,
+              color: customcolor1,
+              fontWeight: FontWeight.w600),
           errorMaxLines: 1,
         ),
         style: GoogleFonts.roboto(
@@ -206,7 +220,8 @@ class EmailVerify extends StatelessWidget {
 }
 
 class VerifyTab extends StatelessWidget {
-  const VerifyTab({Key? key, required this.billsTabController}) : super(key: key);
+  const VerifyTab({Key? key, required this.billsTabController})
+      : super(key: key);
 
   final TabController? billsTabController;
 
@@ -219,8 +234,11 @@ class VerifyTab extends StatelessWidget {
         isScrollable: true,
         unselectedLabelColor: customcolor3,
         indicatorSize: TabBarIndicatorSize.label,
-        indicator: BoxDecoration(borderRadius: BorderRadius.circular(5), color: const Color.fromARGB(255, 213, 221, 239)),
-        labelStyle: GoogleFonts.roboto(fontSize: 15, fontWeight: FontWeight.bold),
+        indicator: BoxDecoration(
+            borderRadius: BorderRadius.circular(5),
+            color: const Color.fromARGB(255, 213, 221, 239)),
+        labelStyle:
+            GoogleFonts.roboto(fontSize: 15, fontWeight: FontWeight.bold),
         labelColor: customcolor1,
         unselectedLabelStyle: GoogleFonts.roboto(fontWeight: FontWeight.w400),
         indicatorWeight: 2,
