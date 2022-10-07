@@ -4,15 +4,10 @@ import '../../constants/custom_color.dart';
 import '../authentication/wallet_set_screen.dart';
 
 class PageBuilderWidget extends StatelessWidget {
-  String title;
-  String description;
-  String imgurl;
-  PageBuilderWidget(
-      {Key? key,
-      required this.title,
-      required this.description,
-      required this.imgurl})
-      : super(key: key);
+  final String title;
+  final String description;
+  final String imgurl;
+  const PageBuilderWidget({Key? key, required this.title, required this.description, required this.imgurl}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +18,7 @@ class PageBuilderWidget extends StatelessWidget {
         // mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            padding:
-                EdgeInsets.only(bottom: MediaQuery.of(context).size.height / 6),
+            padding: EdgeInsets.only(bottom: MediaQuery.of(context).size.height / 6),
             alignment: Alignment.centerRight,
             child: TextButton(
               onPressed: () {
@@ -50,11 +44,7 @@ class PageBuilderWidget extends StatelessWidget {
             height: 20,
           ),
           //Tite Text
-          Text(title,
-              style: const TextStyle(
-                  color: onboardHeadingColor,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500)),
+          Text(title, style: const TextStyle(color: onboardHeadingColor, fontSize: 20, fontWeight: FontWeight.w500)),
           const SizedBox(
             height: 10,
           ),
