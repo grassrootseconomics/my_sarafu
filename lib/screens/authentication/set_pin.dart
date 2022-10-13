@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pin_code_text_field/pin_code_text_field.dart';
-
+import '../../constants/const.dart';
 import '../../constants/custom_color.dart';
 import '../../utils/buttons.dart';
 import '../../utils/screen_resolution.dart';
@@ -32,7 +32,15 @@ class _PinSetUpState extends State<PinSetUp> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Spacer(flex: 1),
-                Icon(Icons.lock, size: 60.sp, color: customcolor1),
+                // Icon(Icons.lock, size: 60.sp, color: customcolor1),
+                Center(
+                  child: Image.asset(
+                    newLogo,
+                    height: 65.h,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                yMargin10,
                 yMargin25,
                 Text(
                   'Set your Pin',
@@ -42,28 +50,20 @@ class _PinSetUpState extends State<PinSetUp> {
                 PinCodeTextField(
                   autofocus: true,
                   controller: pinController,
-                  hideCharacter: true,
-                  pinBoxRadius: 100,
-                  hasTextBorderColor: Colors.grey,
-                  highlightPinBoxColor: Colors.grey,
-                  defaultBorderColor: Colors.grey,
+                  pinBoxRadius: 10,
+                  hasTextBorderColor: customcolor1,
+                  highlightPinBoxColor: Colors.white,
+                  defaultBorderColor: (Colors.grey[500])!,
                   maxLength: 6,
-                  // hasError: hasError,
-
-                  onTextChanged: (text) {
-                    setState(() {
-                      // hasError = false;
-                    });
-                  },
+                  onTextChanged: (text) {},
                   onDone: (text) {
-                    debugPrint("DONE CONTROLLER ${pinController.text}");
+                    debugPrint("PIN CONTROLLER ${pinController.text}");
                   },
-                  pinBoxWidth: 30.h,
-                  pinBoxHeight: 30.w,
-
-                  wrapAlignment: WrapAlignment.spaceAround,
+                  pinBoxHeight: 50.h,
+                  pinBoxWidth: 40.w,
                   pinBoxDecoration: ProvidedPinBoxDecoration.defaultPinBoxDecoration,
-                  pinTextStyle: TextStyle(fontSize: 25.sp),
+                  // pinBoxOuterPadding: const EdgeInsets.symmetric(horizontal: 6),
+                  pinTextStyle: TextStyle(fontSize: 22.sp, color: customcolor1),
                   pinTextAnimatedSwitcherTransition: ProvidedPinBoxTextAnimation.scalingTransition,
                   pinTextAnimatedSwitcherDuration: const Duration(milliseconds: 100),
                   keyboardType: TextInputType.number,
