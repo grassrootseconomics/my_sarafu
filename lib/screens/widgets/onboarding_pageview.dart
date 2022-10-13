@@ -37,28 +37,33 @@ class PageBuilderWidget extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: Column(
               children: [
-                Container(
-                  margin: const EdgeInsets.only(top: 20),
+                SizedBox(
                   child: Image.asset(
                     imgurl,
-                    width: 250,
+                    height: 280.h,
+                    fit: BoxFit.cover,
                   ),
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
+                const SizedBox(height: 20),
                 //Tite Text
-                Text(title, style: const TextStyle(color: onboardHeadingColor, fontSize: 20, fontWeight: FontWeight.w500)),
-                const SizedBox(
-                  height: 10,
+                Text(
+                  title,
+                  style: TextStyle(
+                    color: onboardHeadingColor,
+                    fontSize: 20.sp,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
+                const SizedBox(height: 10),
                 //discription
-                Text(description,
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      color: onboardTextColor,
-                      fontSize: 14,
-                    )),
+                Text(
+                  description,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: onboardTextColor,
+                    fontSize: 15.sp,
+                  ),
+                ),
               ],
             ),
           ),

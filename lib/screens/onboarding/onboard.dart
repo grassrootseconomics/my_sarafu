@@ -32,7 +32,11 @@ class _OnboardScreenState extends State<OnboardScreen> {
                 },
                 itemCount: allinonboardlist.length,
                 itemBuilder: (context, index) {
-                  return PageBuilderWidget(title: allinonboardlist[index].titlestr, description: allinonboardlist[index].description, imgurl: allinonboardlist[index].imgStr);
+                  return PageBuilderWidget(
+                    title: allinonboardlist[index].titlestr,
+                    description: allinonboardlist[index].description,
+                    imgurl: allinonboardlist[index].imgStr,
+                  );
                 }),
             Positioned(
               bottom: MediaQuery.of(context).size.height * 0.18,
