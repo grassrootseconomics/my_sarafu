@@ -68,7 +68,7 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                   minimumSize: Size(MediaQuery.of(context).size.width * 0.8, 48),
                 ),
                 child: const Text(
-                  "I have an existing wallet",
+                  "Connect existing wallet",
                   style: TextStyle(fontSize: 14, color: onboardHeadingColor),
                 ),
               ),

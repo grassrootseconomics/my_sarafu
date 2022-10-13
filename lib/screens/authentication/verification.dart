@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grassroots_flutter/utils/screen_resolution.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
+import '../../constants/const.dart';
 import '../../utils/buttons.dart';
 import '../../constants/custom_color.dart';
 import 'otp_screen.dart';
@@ -34,19 +35,15 @@ class _VerifyIdentityState extends State<VerifyIdentity> {
               padding: EdgeInsets.only(left: 15.w, right: 15.w, top: 60.h, bottom: 25.h),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                // mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,
-
                 children: [
                   Flexible(
                     fit: FlexFit.loose,
                     child: SizedBox(
-                      height: 300.h,
-                      width: double.infinity,
-                      child: Image.asset(
-                        'assets/images/bro.png',
-                        fit: BoxFit.scaleDown,
-                      ),
+                      height: 150.h,
+                      width: 150.h,
+                      child: Image.asset(newLogo, fit: BoxFit.contain),
                     ),
                   ),
                   yMargin20,
@@ -60,7 +57,7 @@ class _VerifyIdentityState extends State<VerifyIdentity> {
                   ),
                   yMargin10,
                   Text(
-                    'Verify with your phone number or email address.',
+                    'Verify with your phone number or email\naddress.',
                     style: TextStyle(
                       fontSize: 15.sp,
                       color: customcolor3,

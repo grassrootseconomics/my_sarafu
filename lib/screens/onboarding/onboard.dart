@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:grassroots_flutter/constants/const.dart';
-import 'package:grassroots_flutter/models/onboarding_model.dart';
 import 'package:grassroots_flutter/screens/authentication/wallet_set_screen.dart';
 import 'package:grassroots_flutter/screens/widgets/onboarding_pageview.dart';
 
 import '../../constants/custom_color.dart';
 
 class OnboardScreen extends StatefulWidget {
-  OnboardScreen({Key? key}) : super(key: key);
-
+  const OnboardScreen({super.key});
   @override
   State<OnboardScreen> createState() => _OnboardScreenState();
 }
