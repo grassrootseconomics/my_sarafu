@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grassroots_flutter/constants/const.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
 import 'package:grassroots_flutter/screens/authentication/verification.dart';
-import 'package:http/http.dart';
 
 class WalletSetUpScreen extends StatefulWidget {
   const WalletSetUpScreen({super.key});
@@ -15,6 +15,7 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0XFFF9F6F2),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -24,31 +25,30 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                 margin: const EdgeInsets.only(top: 20),
                 child: Image.asset(
                   walletImage,
-                  width: 200,
+                  height: 250.h,
+                  width: double.infinity,
+                  fit: BoxFit.scaleDown,
                 ),
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               //Tite Text
-              const Text(walletHeading,
-                  style: TextStyle(
-                      color: onboardHeadingColor,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500)),
-              const SizedBox(
-                height: 10,
+              Text(
+                walletHeading,
+                style: TextStyle(
+                  color: onboardHeadingColor,
+                  fontSize: 20.sp,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
+              const SizedBox(height: 10),
               //discription
-              const Text(walletDesc,
+              Text(walletDesc,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: onboardTextColor,
-                    fontSize: 14,
+                    fontSize: 15.sp,
                   )),
-              const SizedBox(
-                height: 30,
-              ),
+              const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -59,15 +59,13 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  side:
-                      const BorderSide(width: 1.3, color: onboardHeadingColor),
+                  side: const BorderSide(width: 1.3, color: onboardHeadingColor),
                   // backgroundColor: onboardHeadingColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
 
-                  minimumSize:
-                      Size(MediaQuery.of(context).size.width * 0.8, 48),
+                  minimumSize: Size(MediaQuery.of(context).size.width * 0.8, 48),
                 ),
                 child: const Text(
                   "I have an existing wallet",
@@ -91,8 +89,7 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
-                  minimumSize:
-                      Size(MediaQuery.of(context).size.width * 0.8, 48),
+                  minimumSize: Size(MediaQuery.of(context).size.width * 0.8, 48),
                 ),
                 child: const Text(
                   "Create an Account",
