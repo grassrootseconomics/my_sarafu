@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:grassroots_flutter/constants/const.dart';
-import 'package:grassroots_flutter/models/onboarding_model.dart';
 import 'package:grassroots_flutter/screens/authentication/wallet_set_screen.dart';
 import 'package:grassroots_flutter/screens/widgets/onboarding_pageview.dart';
 
 import '../../constants/custom_color.dart';
 
 class OnboardScreen extends StatefulWidget {
-  OnboardScreen({Key? key}) : super(key: key);
-
+  const OnboardScreen({super.key});
   @override
   State<OnboardScreen> createState() => _OnboardScreenState();
 }
@@ -19,7 +17,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0XFFF9F6F2),
       body: SafeArea(
         child: Stack(
           // alignment: Alignment.center,
@@ -33,12 +31,13 @@ class _OnboardScreenState extends State<OnboardScreen> {
                 itemCount: allinonboardlist.length,
                 itemBuilder: (context, index) {
                   return PageBuilderWidget(
-                      title: allinonboardlist[index].titlestr,
-                      description: allinonboardlist[index].description,
-                      imgurl: allinonboardlist[index].imgStr);
+                    title: allinonboardlist[index].titlestr,
+                    description: allinonboardlist[index].description,
+                    imgurl: allinonboardlist[index].imgStr,
+                  );
                 }),
             Positioned(
-              bottom: MediaQuery.of(context).size.height * 0.2,
+              bottom: MediaQuery.of(context).size.height * 0.18,
               left: MediaQuery.of(context).size.width * 0.44,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -67,8 +66,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0),
                         ),
-                        minimumSize:
-                            Size(MediaQuery.of(context).size.width * 0.8, 48),
+                        minimumSize: Size(MediaQuery.of(context).size.width * 0.8, 48),
                       ),
                       child: const Text(
                         "Get Started",

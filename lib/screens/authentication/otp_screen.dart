@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
 import 'package:grassroots_flutter/utils/screen_resolution.dart';
 import 'package:pin_code_text_field/pin_code_text_field.dart';
+import '../../constants/const.dart';
 import 'set_pin.dart';
 
 class OTPVerify extends StatefulWidget {
@@ -18,22 +19,25 @@ class _OTPVerifyState extends State<OTPVerify> {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
-        appBar: AppBar(backgroundColor: customcolor4),
+        appBar: AppBar(
+          backgroundColor: const Color(0XFFF9F6F2),
+          elevation: 0,
+        ),
         body: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          color: customcolor4,
+          color: const Color(0XFFF9F6F2),
           child: Padding(
-            padding: EdgeInsets.only(left: 15.w, right: 15.w, bottom: 50.h),
+            padding: EdgeInsets.only(left: 15.w, right: 15.w, bottom: 50.h, top: 5.h),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: [
                 Center(
-                  child: Icon(
-                    Icons.phonelink_lock_rounded,
-                    size: 60.sp,
-                    color: customcolor1,
+                  child: Image.asset(
+                    newLogo,
+                    height: 65.h,
+                    fit: BoxFit.cover,
                   ),
                 ),
                 yMargin5,

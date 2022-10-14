@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grassroots_flutter/constants/const.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
-import 'package:grassroots_flutter/screens/authentication/verification.dart';
 import 'package:grassroots_flutter/screens/onboarding/onboard.dart';
-import 'package:http/http.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -27,6 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0XFFF9F6F2),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -40,7 +39,14 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ),
 
-              const Text(splashHeading, style: TextStyle(color: splashHeadingColor, fontSize: 24, fontWeight: FontWeight.w500)),
+              const Text(
+                splashHeading,
+                style: TextStyle(
+                  color: splashHeadingColor,
+                  fontSize: 24,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
               const SizedBox(
                 height: 30,
               ),

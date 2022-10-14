@@ -1,12 +1,9 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:grassroots_flutter/screens/onboarding/onboard.dart';
 import 'package:grassroots_flutter/splash_screen.dart';
-
 import 'constants/color_schemes.dart';
 import 'constants/custom_color.dart';
-import 'screens/authentication/verification.dart';
 
 void main() {
   runApp(const MyApp());
@@ -72,19 +69,16 @@ class Home extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           elevation: 2,
-          title: Text("Material Theme Builder"),
+          title: const Text("Material Theme Builder"),
         ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Update with your UI',
-              ),
+            children: const [
+              Text('Update with your UI'),
             ],
           ),
         ),
-        floatingActionButton:
-            FloatingActionButton(onPressed: () => {}, tooltip: 'Increment'));
+        floatingActionButton: FloatingActionButton(onPressed: () => {}, tooltip: 'Increment'));
   }
 }
