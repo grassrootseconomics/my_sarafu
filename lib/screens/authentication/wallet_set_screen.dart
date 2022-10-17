@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grassroots_flutter/constants/const.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
 import 'package:grassroots_flutter/screens/authentication/verification.dart';
+import 'package:grassroots_flutter/screens/homeScreen/home_screen.dart';
 
 class WalletSetUpScreen extends StatefulWidget {
   const WalletSetUpScreen({super.key});
@@ -54,18 +55,20 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const VerifyIdentity(),
+                      builder: (context) => HomeScreen(),
                     ),
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  side: const BorderSide(width: 1.3, color: onboardHeadingColor),
+                  side:
+                      const BorderSide(width: 1.3, color: onboardHeadingColor),
                   // backgroundColor: onboardHeadingColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
 
-                  minimumSize: Size(MediaQuery.of(context).size.width * 0.8, 48),
+                  minimumSize:
+                      Size(MediaQuery.of(context).size.width * 0.8, 48),
                 ),
                 child: const Text(
                   "Connect existing wallet",
@@ -89,7 +92,8 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
-                  minimumSize: Size(MediaQuery.of(context).size.width * 0.8, 48),
+                  minimumSize:
+                      Size(MediaQuery.of(context).size.width * 0.8, 48),
                 ),
                 child: const Text(
                   "Create an Account",
