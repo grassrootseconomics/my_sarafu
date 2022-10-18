@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 
 class TransactionList extends StatefulWidget {
   const TransactionList({super.key});
@@ -28,23 +27,24 @@ class _TransactionListState extends State<TransactionList> {
           ),
           title: Text(
             index.isOdd ? 'Sent Sarafu' : 'Received Sarafu',
-            style: TextStyle(fontWeight: FontWeight.normal, fontSize: 17),
+            style: const TextStyle(fontWeight: FontWeight.normal, fontSize: 17),
           ),
-          subtitle: Text('27/09/2022'),
+          subtitle: const Text('27/09/2022'),
           trailing: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
+            // ignore: prefer_const_literals_to_create_immutables
             children: [
-              Text(
+              const Text(
                 '1 SRF',
                 style: TextStyle(color: Color(0xFF213656), fontSize: 17),
               ),
-              Text('0X043fo76dk56c'),
+              const Text('0X043fo76dk56c'),
             ],
           ),
         );
       },
       separatorBuilder: (context, index) {
-        return Divider();
+        return const Divider();
       },
     ));
   }

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class VoucherList extends StatefulWidget {
   const VoucherList({super.key});
@@ -18,15 +16,15 @@ class _VoucherListState extends State<VoucherList> {
       itemBuilder: (context, index) {
         return ListTile(
           title: Text('Sarafu-$index'),
-          subtitle: Text('0X043fo76dk56c'),
-          trailing: Text(
+          subtitle: const Text('0X043fo76dk56c'),
+          trailing: const Text(
             '1 SRF',
             style: TextStyle(color: Color(0xFF213656), fontSize: 17),
           ),
         );
       },
       separatorBuilder: (context, index) {
-        return Divider();
+        return const Divider();
       },
     ));
   }

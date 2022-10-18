@@ -1,6 +1,6 @@
+// ignore_for_file: use_key_in_widget_constructors, library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:grassroots_flutter/constants/const.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
 import 'package:grassroots_flutter/screens/homeScreen/transactions.dart';
@@ -128,7 +128,7 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: onboardHeadingColor,
         selectedItemColor: Colors.white,
-        unselectedItemColor: iconUnseleted,
+        unselectedItemColor: iconUnselected,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),

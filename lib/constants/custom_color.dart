@@ -10,17 +10,18 @@ const primaryColor = Color(0xFF474FCB);
 const onboardHeadingColor = Color(0xFF032E9A);
 const splashHeadingColor = Color(0xFF213656);
 const onboardTextColor = Color(0xFF213656);
+// ignore: use_full_hex_values_for_flutter_colors
 const lightWhiteColor = Color(0xFFFFFFFFCC);
 
-const Color lightgreenshede = Color(0xFFF0FAF6);
-const Color lightgreenshede1 = Color(0xFFB2D9CC);
-const Color greenshede0 = Color(0xFF66A690);
-const Color greenshede1 = Color(0xFF93C9B5);
+const Color lightgreenshade = Color(0xFFF0FAF6);
+const Color lightgreenshade1 = Color(0xFFB2D9CC);
+const Color greenshade0 = Color(0xFF66A690);
+const Color greenshade1 = Color(0xFF93C9B5);
 const Color primarygreen = Color(0xFF1E3A34);
 const Color grayshade = Color(0xFF93B3AA);
 const Color colorAcent = Color(0xFF78C2A7);
 const Color cyanColor = Color(0xFF6D7E6E);
-const iconUnseleted = Color(0xFF9FCAFF);
+const iconUnselected = Color(0xFF9FCAFF);
 
 const kAnimationDuration = Duration(milliseconds: 200);
 
