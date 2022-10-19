@@ -16,4 +16,4 @@ jobs:
       - name: Install packages
         run: flutter pub get          
       - name: Run analyze
-        run: flutter --version
+        run: flutter analyze
