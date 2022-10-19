@@ -134,7 +134,7 @@ class PhoneVerify extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
-            height: 55.h,
+            height: (56.6).h,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: customcolor1, width: 2),
