@@ -187,7 +187,7 @@ class EmailVerify extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10.w),
       child: Container(
         // color: Colors.teal,
-        height: 55.h,
+        height: (55.6).h,
         child: TextField(
           maxLines: 1,
           decoration: InputDecoration(
