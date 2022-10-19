@@ -29,7 +29,9 @@ class PageBuilderWidget extends StatelessWidget {
                   ),
                 );
               },
-              child: const Text('Skip'),
+              child: const Text('Skip' , 
+              // style: TextStyle(color: onboardHeadingColor )
+            ),
             ),
           ),
           // Spacer(),
