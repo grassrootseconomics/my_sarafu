@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grassroots_flutter/constants/const.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
 import 'package:grassroots_flutter/screens/onboarding/onboard.dart';
@@ -35,10 +36,10 @@ class _SplashScreenState extends State<SplashScreen> {
                 margin: const EdgeInsets.only(top: 20),
                 child: Image.asset(
                   logo,
-                  width: 180,
+                  width: 90.h,
                 ),
               ),
-
+              const SizedBox(height: 10),
               const Text(
                 splashHeading,
                 style: TextStyle(
