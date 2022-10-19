@@ -1,4 +1,10 @@
-on: push
+on: 
+  pull_request:
+    branches:
+      - develop
+  push:
+    branches:
+      - develop
 
 name: Flutter analyze build debug
 
@@ -31,5 +37,5 @@ jobs:
       - name: Push APKs to Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: android-outputs
-          path: build/app/outputs/**/debug/*.apk
+          name: arm64-v8a
+          path: build/app/outputs/apk/debug/*-arm64-v8a-debug.apk
