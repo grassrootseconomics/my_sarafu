@@ -303,6 +303,7 @@ class ConfirmModal extends StatelessWidget {
                         title: 'Share',
                         textColor: Colors.white,
                         onTap: () {
+                          Navigator.pop(context);
                           Navigator.push(
                             context,
                             MaterialPageRoute(
