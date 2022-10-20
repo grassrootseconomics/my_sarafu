@@ -8,7 +8,7 @@ class SarafuButton extends StatefulWidget {
   final IconData? leadingIcon, endIcon;
   final Function()? onTap;
   final Color? textColor, color;
-  final double? width, height;
+  final double? width, height, radius;
   final double? textSize;
   final FontWeight? textWeight;
   final FontStyle? fontStyle;
@@ -26,6 +26,7 @@ class SarafuButton extends StatefulWidget {
     this.endIcon,
     this.textWeight,
     this.fontStyle,
+    this.radius,
   }) : super(key: key);
 
   @override
@@ -42,7 +43,7 @@ class _SarafuButtonState extends State<SarafuButton> {
         width: widget.width ?? 130.w,
         decoration: BoxDecoration(
           color: widget.color ?? const Color(0xFF032E9A),
-          borderRadius: BorderRadius.circular(50),
+          borderRadius: BorderRadius.circular(widget.radius ?? 50),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
