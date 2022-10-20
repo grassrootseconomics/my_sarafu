@@ -35,7 +35,7 @@ dependencies:
   socket_io_client: ^2.0.0-beta.4-nullsafety.0
   rxdart: ^0.26.0
   flutter_svg: ^1.0.0
-  contacts_service: ^0.4.6
+  contacts_service: ^0.6.0
   flutter_bloc: ^8.1.1
   # flutter_local_notifications: ^8.2.0
   firebase_core: ^1.12.0
