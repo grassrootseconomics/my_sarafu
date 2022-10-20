@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../constants/buttons.dart';
-import '../../constants/const.dart';
 import '../../constants/custom_color.dart';
 import '../../utils/screen_resolution.dart';
 
