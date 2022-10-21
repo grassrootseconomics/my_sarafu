@@ -60,15 +60,13 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  side:
-                      const BorderSide(width: 1.3, color: onboardHeadingColor),
+                  side: const BorderSide(width: 1.3, color: onboardHeadingColor),
                   // backgroundColor: onboardHeadingColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
 
-                  minimumSize:
-                      Size(MediaQuery.of(context).size.width * 0.8, 48),
+                  minimumSize: Size(MediaQuery.of(context).size.width * 0.8, 48),
                 ),
                 child: const Text(
                   "Connect existing wallet",
@@ -80,20 +78,19 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const VerifyIdentity(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const VerifyIdentity(),
+                  //   ),
+                  // );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: onboardHeadingColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
-                  minimumSize:
-                      Size(MediaQuery.of(context).size.width * 0.8, 48),
+                  minimumSize: Size(MediaQuery.of(context).size.width * 0.8, 48),
                 ),
                 child: const Text(
                   "Create an Account",

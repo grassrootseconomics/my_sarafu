@@ -4,7 +4,6 @@ import 'package:grassroots_flutter/constants/custom_color.dart';
 import 'package:grassroots_flutter/utils/screen_resolution.dart';
 import 'package:pin_code_text_field/pin_code_text_field.dart';
 import '../../constants/const.dart';
-import 'set_pin.dart';
 
 class OTPVerify extends StatefulWidget {
   const OTPVerify({super.key});
@@ -79,10 +78,10 @@ class _OTPVerifyState extends State<OTPVerify> {
                   },
                   onDone: (text) {
                     debugPrint("DONE CONTROLLER ${otpController.text}");
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const PinSetUp()),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => const PinSetUp()),
+                    // );
                   },
                   pinBoxHeight: 50.h,
                   pinBoxWidth: 42.w,
