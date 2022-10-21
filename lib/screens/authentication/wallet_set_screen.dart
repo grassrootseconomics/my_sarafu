@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grassroots_flutter/constants/const.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
-import 'package:grassroots_flutter/screens/authentication/verification.dart';
 import 'package:grassroots_flutter/screens/homeScreen/home_screen.dart';
 
 class WalletSetUpScreen extends StatefulWidget {
