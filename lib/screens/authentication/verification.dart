@@ -8,7 +8,6 @@ import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import '../../constants/const.dart';
 import '../../utils/buttons.dart';
 import '../../constants/custom_color.dart';
-import 'otp_screen.dart';
 
 class VerifyIdentity extends StatefulWidget {
   const VerifyIdentity({super.key});
@@ -88,12 +87,12 @@ class _VerifyIdentityState extends State<VerifyIdentity> {
                   Align(
                     alignment: Alignment.bottomRight,
                     child: CustomTextButton(
-                      onPressed: () => Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const OTPVerify(),
-                        ),
-                      ),
+                      // onPressed: () => Navigator.pushReplacement(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const OTPVerify(),
+                      //   ),
+                      // ),
                       width: 120.w,
                       height: 40.h,
                       buttonRadius: 50,
