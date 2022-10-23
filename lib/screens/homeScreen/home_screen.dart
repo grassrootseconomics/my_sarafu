@@ -7,6 +7,8 @@ import 'package:grassroots_flutter/screens/homeScreen/transactions.dart';
 import 'package:grassroots_flutter/screens/homeScreen/voucher_list.dart';
 import 'package:grassroots_flutter/screens/widgets/widget.dart';
 
+import '../vouchers/send_voucher.dart';
+
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -19,8 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: DefaultTabController(
         length: 2,
         child: NestedScrollView(
-            headerSliverBuilder:
-                (BuildContext context, bool innerBoxIsScrolled) {
+            headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
               return <Widget>[
                 SliverAppBar(
                   automaticallyImplyLeading: false,
@@ -28,10 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     // crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const CircleAvatar(
-                          radius: 18,
-                          backgroundColor: Colors.grey,
-                          backgroundImage: AssetImage(userIcon)),
+                      const CircleAvatar(radius: 18, backgroundColor: Colors.grey, backgroundImage: AssetImage(userIcon)),
                       // Expanded(child: Container()),
                       Stack(
                         children: const [
@@ -66,8 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         const Text(
                           'Total balance',
-                          style:
-                              TextStyle(fontSize: 18, color: lightWhiteColor),
+                          style: TextStyle(fontSize: 18, color: lightWhiteColor),
                         ),
                         const Text(
                           '500 SRF',
@@ -80,20 +77,25 @@ class _HomeScreenState extends State<HomeScreen> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             circleIconWithText(
-                                icon: const Icon(
-                                  Icons.upload,
-                                  color: Colors.white,
-                                ),
-                                text: 'Send'),
+                              icon: const Icon(Icons.upload, color: Colors.white),
+                              text: 'Send',
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const SendVoucher(),
+                                  ),
+                                );
+                              },
+                            ),
                             const SizedBox(
                               width: 10,
                             ),
                             circleIconWithText(
-                                icon: const Icon(
-                                  Icons.download,
-                                  color: Colors.white,
-                                ),
-                                text: 'Receive')
+                              icon: const Icon(Icons.download, color: Colors.white),
+                              text: 'Receive',
+                              onTap: () {},
+                            )
                           ],
                         ),
                         const SizedBox(
@@ -122,8 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ];
             },
-            body:
-                const TabBarView(children: [VoucherList(), TransactionList()])),
+            body: const TabBarView(children: [VoucherList(), TransactionList()])),
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: onboardHeadingColor,
@@ -159,14 +160,9 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   double get maxExtent => _tabBar.preferredSize.height;
 
   @override
-  Widget build(
-      BuildContext context, double shrinkOffset, bool overlapsContent) {
+  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
     return Container(
-      decoration: const BoxDecoration(
-          color: Colors.white,
-          border: Border(
-              bottom: BorderSide(
-                  color: Color.fromARGB(255, 213, 221, 239), width: 0.8))),
+      decoration: const BoxDecoration(color: Colors.white, border: Border(bottom: BorderSide(color: Color.fromARGB(255, 213, 221, 239), width: 0.8))),
       child: _tabBar,
     );
   }
