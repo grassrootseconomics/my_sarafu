@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:grassroots_flutter/screens/authentication/verify_pin.dart';
+import 'package:grassroots_flutter/screens/authentication/wallet_importing_screen.dart';
 import 'package:pin_code_text_field/pin_code_text_field.dart';
 import '../../constants/const.dart';
 import '../../constants/custom_color.dart';
 import '../../utils/buttons.dart';
 import '../../utils/screen_resolution.dart';
 
-class PinSetUp extends StatefulWidget {
-  const PinSetUp({super.key});
+class Veirfypin extends StatefulWidget {
+  const Veirfypin({super.key});
 
   @override
-  State<PinSetUp> createState() => _PinSetUpState();
+  State<Veirfypin> createState() => _VeirfypinState();
 }
 
-class _PinSetUpState extends State<PinSetUp> {
+class _VeirfypinState extends State<Veirfypin> {
   final TextEditingController pinController = TextEditingController();
 
   @override
@@ -44,7 +44,7 @@ class _PinSetUpState extends State<PinSetUp> {
                 yMargin10,
                 yMargin25,
                 Text(
-                  'Set your Pin',
+                  'Verify your Pin',
                   style: TextStyle(fontSize: 17.sp, color: customcolor3),
                 ),
                 const Spacer(flex: 2),
@@ -74,13 +74,13 @@ class _PinSetUpState extends State<PinSetUp> {
                   width: 100.w,
                   height: 50.h,
                   buttonRadius: 50,
-                  onPressed: () => Navigator.pushReplacement(
+                   onPressed: () => Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const Veirfypin(),
+                          builder: (context) => const walletimportingscreen(),
                         ),
                       ),
-                  child: Text('Set Pin', style: TextStyle(color: customcolor4, fontSize: 15.sp)),
+                  child: Text('Verify Pin', style: TextStyle(color: customcolor4, fontSize: 15.sp)),
                 ),
                 const Spacer(flex: 1),
               ],
