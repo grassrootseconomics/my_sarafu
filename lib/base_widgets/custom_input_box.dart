@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
 
 class CustomTextfield extends StatefulWidget {
@@ -43,10 +42,10 @@ class _CustomTextfieldState extends State<CustomTextfield> {
                 //   errorMaxLines: 1,
                 // ),
                 hintText: 'Enter seed phrase',
-                hintStyle: GoogleFonts.roboto(
-                  fontSize: 17.sp,
-                  color: Theme.of(context).textTheme.bodyText1!.color,
-                ),
+                // hintStyle: GoogleFonts.roboto(
+                //   fontSize: 17.sp,
+                //   color: Theme.of(context).textTheme.bodyText1!.color,
+                // ),
               ),
             ),
           ),
