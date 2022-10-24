@@ -42,10 +42,10 @@ class _CustomTextfieldState extends State<CustomTextfield> {
               //       fontWeight: FontWeight.w600),
               //   errorMaxLines: 1,
               // ),
-              // style: GoogleFonts.roboto(
-              //   fontSize: 17.sp,
-              //   color: Theme.of(context).textTheme.bodyText1!.color,
-              hintText: 'Enter seed phrase'
+              hintText: 'Enter seed phrase',
+              hintStyle: GoogleFonts.roboto(
+                fontSize: 17.sp,
+                color: Theme.of(context).textTheme.bodyText1!.color,
               ),
             ),
           ),
