@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
+import 'package:grassroots_flutter/screens/authentication/set_pin.dart';
 import 'package:grassroots_flutter/utils/screen_resolution.dart';
 import 'package:pin_code_text_field/pin_code_text_field.dart';
 import '../../constants/const.dart';
-import 'set_pin.dart';
 
 class OTPVerify extends StatefulWidget {
   const OTPVerify({super.key});

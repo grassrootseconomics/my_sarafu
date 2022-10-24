@@ -3,12 +3,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grassroots_flutter/screens/authentication/otp_screen.dart';
 import 'package:grassroots_flutter/utils/screen_resolution.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import '../../constants/const.dart';
 import '../../utils/buttons.dart';
 import '../../constants/custom_color.dart';
-import 'otp_screen.dart';
 
 class VerifyIdentity extends StatefulWidget {
   const VerifyIdentity({super.key});

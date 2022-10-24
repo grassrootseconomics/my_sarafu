@@ -1,8 +1,6 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, camel_case_types
 
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:grassroots_flutter/base_widgets/custom_buttons.dart';
 import 'package:grassroots_flutter/base_widgets/custom_input_box.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
 import 'package:grassroots_flutter/screens/authentication/verify_pin.dart';
