@@ -13,10 +13,6 @@ jobs:
     name: Flutter analyze, build
     runs-on: ubuntu-latest
     steps:
-      - name: Save state
-        run: echo "{name}={value}" >> $GITHUB_STATE
-      - name: Set output
-        run: echo "{name}={value}" >> $GITHUB_OUTPUT
       - name: Checkout code
         uses: actions/checkout@v3
       - uses: actions/setup-java@v3
