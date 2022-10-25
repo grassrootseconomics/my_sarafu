@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:grassroots_flutter/screens/authentication/wallet_importing_screen.dart';
+import 'package:grassroots_flutter/screens/onboarding/wallet_importing_screen.dart';
 import 'package:pin_code_text_field/pin_code_text_field.dart';
 import '../../constants/const.dart';
 import '../../constants/custom_color.dart';
