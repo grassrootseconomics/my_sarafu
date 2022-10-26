@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../constants/custom_color.dart';
-import '../authentication/wallet_set_screen.dart';
+import '../onboarding/wallet_set_screen.dart';
 
 class PageBuilderWidget extends StatelessWidget {
   final String title;

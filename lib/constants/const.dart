@@ -7,6 +7,7 @@ const splashHeading = "Sarafu.Network";
 const walletImage = "assets/images/onboard4.png";
 const walletHeading = "Set up your wallet";
 const walletDesc = "Import an existing wallet or create a new one";
+const howtoimport = "How do you want to import existing wallet?";
 
 List<OnboardModel> allinonboardlist = [
   OnboardModel(

@@ -1,5 +1,6 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
 // import 'package:stage3/constants/colors.dart';
 

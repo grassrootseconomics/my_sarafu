@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grassroots_flutter/constants/const.dart';
-import 'package:grassroots_flutter/screens/authentication/wallet_set_screen.dart';
+import 'package:grassroots_flutter/screens/onboarding/wallet_set_screen.dart';
 import 'package:grassroots_flutter/screens/widgets/onboarding_pageview.dart';
 
 import '../../constants/custom_color.dart';

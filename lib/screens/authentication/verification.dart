@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:grassroots_flutter/screens/authentication/otp_screen.dart';
 import 'package:grassroots_flutter/utils/screen_resolution.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 import '../../constants/const.dart';
@@ -87,12 +88,12 @@ class _VerifyIdentityState extends State<VerifyIdentity> {
                   Align(
                     alignment: Alignment.bottomRight,
                     child: CustomTextButton(
-                      // onPressed: () => Navigator.pushReplacement(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const OTPVerify(),
-                      //   ),
-                      // ),
+                      onPressed: () => Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const OTPVerify(),
+                        ),
+                      ),
                       width: 120.w,
                       height: 40.h,
                       buttonRadius: 50,
