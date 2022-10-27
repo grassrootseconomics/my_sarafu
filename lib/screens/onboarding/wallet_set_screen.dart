@@ -5,7 +5,6 @@ import 'package:grassroots_flutter/constants/custom_color.dart';
 import 'package:grassroots_flutter/screens/authentication/verification.dart';
 import 'package:grassroots_flutter/screens/homeScreen/home_screen.dart';
 
-
 class WalletSetUpScreen extends StatefulWidget {
   const WalletSetUpScreen({super.key});
 
@@ -67,7 +66,6 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),
                   ),
-
                   minimumSize:
                       Size(MediaQuery.of(context).size.width * 0.8, 48),
                 ),

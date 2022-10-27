@@ -2,6 +2,7 @@ import 'package:grassroots_flutter/models/onboarding_model.dart';
 
 const logo = "assets/images/logo2.png";
 const newLogo = "assets/images/logo2.png";
+const logoWhite = "assets/images/logoWhite.png";
 const userIcon = "assets/images/man.png";
 const splashHeading = "Sarafu.Network";
 const walletImage = "assets/images/onboard4.png";

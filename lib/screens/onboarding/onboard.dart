@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:grassroots_flutter/base_widgets/onboarding_pageview.dart';
 import 'package:grassroots_flutter/constants/const.dart';
 import 'package:grassroots_flutter/screens/onboarding/wallet_set_screen.dart';
-import 'package:grassroots_flutter/screens/widgets/onboarding_pageview.dart';
 
 import '../../constants/custom_color.dart';
 
@@ -66,7 +66,8 @@ class _OnboardScreenState extends State<OnboardScreen> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0),
                         ),
-                        minimumSize: Size(MediaQuery.of(context).size.width * 0.8, 48),
+                        minimumSize:
+                            Size(MediaQuery.of(context).size.width * 0.8, 48),
                       ),
                       child: const Text(
                         "Get Started",

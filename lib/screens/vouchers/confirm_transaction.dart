@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../constants/buttons.dart';
+import '../../base_widgets/buttons.dart';
 import '../../constants/const.dart';
 import '../../constants/custom_color.dart';
 import '../../utils/screen_resolution.dart';
@@ -49,7 +49,8 @@ class ConfirmTransaction extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.keyboard_double_arrow_right_outlined, size: 25.sp),
+                      Icon(Icons.keyboard_double_arrow_right_outlined,
+                          size: 25.sp),
                       Text(
                         '500 SRF',
                         style: TextStyle(
@@ -159,7 +160,8 @@ class ConfirmTransaction extends StatelessWidget {
                     showModalBottomSheet(
                       context: context,
                       shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.vertical(top: Radius.circular(50)),
+                        borderRadius:
+                            BorderRadius.vertical(top: Radius.circular(50)),
                       ),
                       isScrollControlled: true,
                       builder: ((context) {
@@ -265,7 +267,8 @@ class ConfirmModal extends StatelessWidget {
                   const ModalDetails(title: 'TX ID', desc: '6146...c9d0'),
                   const ModalDetails(title: 'Block', desc: '1,234,245'),
                   const ModalDetails(title: 'Confirmations', desc: '10/10'),
-                  const ModalDetails(title: 'Timestamp', desc: '21.03.2022 at 23:00'),
+                  const ModalDetails(
+                      title: 'Timestamp', desc: '21.03.2022 at 23:00'),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -324,7 +327,8 @@ class ConfirmModal extends StatelessWidget {
 
 class ModalDetails extends StatelessWidget {
   final String title, desc;
-  const ModalDetails({Key? key, required this.title, required this.desc}) : super(key: key);
+  const ModalDetails({Key? key, required this.title, required this.desc})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

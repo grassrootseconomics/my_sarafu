@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:grassroots_flutter/base_widgets/widget.dart';
+import 'package:grassroots_flutter/screens/sarafuScreen/sarafu_screen.dart';
 
 class VoucherList extends StatefulWidget {
   const VoucherList({super.key});
@@ -15,6 +17,10 @@ class _VoucherListState extends State<VoucherList> {
       itemCount: 100,
       itemBuilder: (context, index) {
         return ListTile(
+          onTap: () {
+            navigate(context, SarafuScreen());
+            // push(context: context, page: SarafuScreen());
+          },
           title: Text('Sarafu-$index'),
           subtitle: const Text('0X043fo76dk56c'),
           trailing: const Text(

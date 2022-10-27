@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:grassroots_flutter/screens/onboarding/wallet_set_screen.dart';
 
 import '../../constants/custom_color.dart';
-import '../onboarding/wallet_set_screen.dart';
 
 class PageBuilderWidget extends StatelessWidget {
   final String title;
   final String description;
   final String imgurl;
-  const PageBuilderWidget({Key? key, required this.title, required this.description, required this.imgurl}) : super(key: key);
+  const PageBuilderWidget(
+      {Key? key,
+      required this.title,
+      required this.description,
+      required this.imgurl})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +23,8 @@ class PageBuilderWidget extends StatelessWidget {
         // mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            padding: EdgeInsets.only(bottom: MediaQuery.of(context).size.height / 6),
+            padding:
+                EdgeInsets.only(bottom: MediaQuery.of(context).size.height / 6),
             alignment: Alignment.centerRight,
             child: TextButton(
               onPressed: () {
@@ -29,9 +35,10 @@ class PageBuilderWidget extends StatelessWidget {
                   ),
                 );
               },
-              child: const Text('Skip' , 
-              // style: TextStyle(color: onboardHeadingColor )
-            ),
+              child: const Text(
+                'Skip',
+                // style: TextStyle(color: onboardHeadingColor )
+              ),
             ),
           ),
           // Spacer(),

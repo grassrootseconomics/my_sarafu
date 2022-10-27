@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:grassroots_flutter/screens/vouchers/confirm_transaction.dart';
-import '../../constants/buttons.dart';
+import '../../base_widgets/buttons.dart';
 import '../../constants/custom_color.dart';
-import '../../constants/text_field.dart';
+import '../../base_widgets/text_field.dart';
 import '../../utils/screen_resolution.dart';
 
 class SendVoucher extends StatelessWidget {
@@ -66,7 +66,9 @@ class SendVoucher extends StatelessWidget {
                                   ),
                                   Text(
                                     '650 SRF',
-                                    style: TextStyle(fontSize: 15.sp, color: onboardHeadingColor),
+                                    style: TextStyle(
+                                        fontSize: 15.sp,
+                                        color: onboardHeadingColor),
                                   ),
                                 ],
                               ),
@@ -162,7 +164,8 @@ class _SelectVoucherState extends State<SelectVoucher> {
         child: DropdownButtonFormField(
           decoration: InputDecoration(
             labelText: 'Select Voucher',
-            labelStyle: GoogleFonts.roboto(fontSize: 15.sp, color: const Color(0XFF213656)),
+            labelStyle: GoogleFonts.roboto(
+                fontSize: 15.sp, color: const Color(0XFF213656)),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
               borderSide: const BorderSide(width: 2, color: Color(0XFFE2E1EC)),
