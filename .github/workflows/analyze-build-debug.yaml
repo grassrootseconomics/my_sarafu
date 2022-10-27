@@ -30,8 +30,8 @@ jobs:
           channel: 'stable'
       - name: Install packages
         run: flutter pub get          
-      - name: Run analyze
-        run: flutter analyze
+      # - name: Run analyze
+      #   run: flutter analyze
       - name: Build android debug
         run: flutter build apk --debug --split-per-abi
       - name: Push APKs to Artifacts
