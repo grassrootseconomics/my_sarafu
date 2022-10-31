@@ -28,7 +28,7 @@ class SendVoucher extends StatelessWidget {
           ),
         ),
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50.h),
+          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 50.h),
           child: Column(
             children: [
               Container(
@@ -50,9 +50,7 @@ class SendVoucher extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              const CustomTextField(
-                                label: 'Enter amount',
-                              ),
+                              const CustomTextField(label: 'Enter amount'),
                               yMargin5,
                               Row(
                                 children: [
@@ -66,9 +64,7 @@ class SendVoucher extends StatelessWidget {
                                   ),
                                   Text(
                                     '650 SRF',
-                                    style: TextStyle(
-                                        fontSize: 15.sp,
-                                        color: onboardHeadingColor),
+                                    style: TextStyle(fontSize: 15.sp, color: onboardHeadingColor),
                                   ),
                                 ],
                               ),
@@ -91,9 +87,7 @@ class SendVoucher extends StatelessWidget {
                       yMargin40,
                       Stack(
                         children: [
-                          const CustomTextField(
-                            label: 'Recipient address',
-                          ),
+                          const CustomTextField(label: 'Recipient address'),
                           Positioned(
                             right: 10,
                             top: 16.h,
@@ -160,12 +154,12 @@ class _SelectVoucherState extends State<SelectVoucher> {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        width: double.infinity, // 250.w,
+        height: 55.h,
+        width: double.infinity,
         child: DropdownButtonFormField(
           decoration: InputDecoration(
             labelText: 'Select Voucher',
-            labelStyle: GoogleFonts.roboto(
-                fontSize: 15.sp, color: const Color(0XFF213656)),
+            labelStyle: GoogleFonts.roboto(fontSize: 15.sp, color: const Color(0XFF213656)),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
               borderSide: const BorderSide(width: 2, color: Color(0XFFE2E1EC)),
