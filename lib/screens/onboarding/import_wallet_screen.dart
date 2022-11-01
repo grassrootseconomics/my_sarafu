@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:grassroots_flutter/base_widgets/custom_input_box.dart';
 import 'package:grassroots_flutter/constants/custom_color.dart';
 import 'package:grassroots_flutter/screens/authentication/verify_pin.dart';
+import 'package:grassroots_flutter/screens/settings/change_language.dart';
 
 class importwallet extends StatelessWidget {
   const importwallet({super.key});
@@ -39,7 +40,7 @@ class importwallet extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Veirfypin(),
+                  builder: (context) => ChangeLanugage(),
                 ),
               );
             },
