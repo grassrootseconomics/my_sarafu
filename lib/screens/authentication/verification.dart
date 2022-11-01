@@ -26,13 +26,13 @@ class _VerifyIdentityState extends State<VerifyIdentity> {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
+        backgroundColor: const Color(0XFFF9F6F2),
         body: DefaultTabController(
           length: 2,
           animationDuration: const Duration(milliseconds: 0),
           child: Container(
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            color: customcolor4,
             child: Padding(
               padding: EdgeInsets.only(left: 15.w, right: 15.w, top: 60.h, bottom: 25.h),
               child: Column(

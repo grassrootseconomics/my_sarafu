@@ -3,6 +3,8 @@ import 'package:grassroots_flutter/base_widgets/onboarding_pageview.dart';
 import 'package:grassroots_flutter/constants/const.dart';
 import 'package:grassroots_flutter/screens/onboarding/wallet_set_screen.dart';
 
+import '../../base_widgets/buttons.dart';
+import '../../base_widgets/widget.dart';
 import '../../constants/custom_color.dart';
 
 class OnboardScreen extends StatefulWidget {
@@ -52,27 +54,12 @@ class _OnboardScreenState extends State<OnboardScreen> {
                 : Positioned(
                     bottom: MediaQuery.of(context).size.height * 0.1,
                     left: MediaQuery.of(context).size.width * 0.1,
-                    child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const WalletSetUpScreen(),
-                          ),
-                        );
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: onboardHeadingColor,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30.0),
-                        ),
-                        minimumSize:
-                            Size(MediaQuery.of(context).size.width * 0.8, 48),
-                      ),
-                      child: const Text(
-                        "Get Started",
-                        style: TextStyle(fontSize: 14, color: Colors.white),
-                      ),
+                    child: SarafuButton(
+                      title: "Get Started",
+                      textColor: Colors.white,
+                      width: MediaQuery.of(context).size.width * 0.8,
+                      buttonRadius: 30,
+                      onTap: () => navigate(context, const WalletSetUpScreen()),
                     ),
                   ),
           ],

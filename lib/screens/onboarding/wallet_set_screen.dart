@@ -5,6 +5,9 @@ import 'package:grassroots_flutter/constants/custom_color.dart';
 import 'package:grassroots_flutter/screens/authentication/verification.dart';
 import 'package:grassroots_flutter/screens/homeScreen/home_screen.dart';
 
+import '../../base_widgets/buttons.dart';
+import '../../base_widgets/widget.dart';
+
 class WalletSetUpScreen extends StatefulWidget {
   const WalletSetUpScreen({super.key});
 
@@ -31,7 +34,8 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                   fit: BoxFit.scaleDown,
                 ),
               ),
-              const SizedBox(height: 20),
+              heightSpace(context, 0.030),
+
               //Tite Text
               Text(
                 walletHeading,
@@ -41,7 +45,7 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              const SizedBox(height: 10),
+              heightSpace(context, 0.010),
               //discription
               Text(walletDesc,
                   textAlign: TextAlign.center,
@@ -49,57 +53,25 @@ class _WalletSetUpScreenState extends State<WalletSetUpScreen> {
                     color: onboardTextColor,
                     fontSize: 15.sp,
                   )),
-              const SizedBox(height: 30),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const VerifyIdentity(),
-                    ),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  side:
-                      const BorderSide(width: 1.3, color: onboardHeadingColor),
-                  backgroundColor: onboardHeadingColor,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0),
-                  ),
-                  minimumSize:
-                      Size(MediaQuery.of(context).size.width * 0.8, 48),
-                ),
-                child: const Text(
-                  "Create a new Wallet",
-                  style: TextStyle(fontSize: 14, color: Colors.white),
-                ),
+              heightSpace(context, 0.030),
+
+              SarafuButton(
+                title: "Create a new Wallet",
+                textColor: Colors.white,
+                color: onboardHeadingColor,
+                width: MediaQuery.of(context).size.width * 0.8,
+                buttonRadius: 30,
+                onTap: () => navigate(context, const VerifyIdentity()),
               ),
-              const SizedBox(
-                height: 20,
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => HomeScreen(),
-                    ),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  side:
-                      const BorderSide(width: 1.3, color: onboardHeadingColor),
-                  // backgroundColor: onboardHeadingColor,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30.0),
-                  ),
-                  minimumSize:
-                      Size(MediaQuery.of(context).size.width * 0.8, 48),
-                ),
-                child: const Text(
-                  "Import existing Wallet",
-                  style: TextStyle(fontSize: 14, color: onboardHeadingColor),
-                ),
+              heightSpace(context, 0.020),
+
+              SarafuButton(
+                title: "Import existing Wallet",
+                textColor: onboardHeadingColor,
+                color: customcolor4, // onboardHeadingColor.withOpacity(0.01),
+                width: MediaQuery.of(context).size.width * 0.8,
+                buttonRadius: 30,
+                onTap: () => navigate(context, HomeScreen()),
               ),
             ],
           ),

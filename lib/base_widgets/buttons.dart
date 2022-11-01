@@ -8,10 +8,11 @@ class SarafuButton extends StatefulWidget {
   final IconData? leadingIcon, endIcon;
   final Function()? onTap;
   final Color? textColor, color;
-  final double? width, height, radius;
+  final double? width, height, buttonRadius;
   final double? textSize;
   final FontWeight? textWeight;
   final FontStyle? fontStyle;
+  final Color? borderColor;
 
   const SarafuButton({
     Key? key,
@@ -26,7 +27,8 @@ class SarafuButton extends StatefulWidget {
     this.endIcon,
     this.textWeight,
     this.fontStyle,
-    this.radius,
+    this.buttonRadius,
+    this.borderColor,
   }) : super(key: key);
 
   @override
@@ -39,11 +41,12 @@ class _SarafuButtonState extends State<SarafuButton> {
     return InkWell(
       onTap: widget.onTap,
       child: Container(
-        height: widget.height ?? 50.h,
+        height: widget.height ?? 45.h,
         width: widget.width ?? 130.w,
         decoration: BoxDecoration(
           color: widget.color ?? const Color(0xFF032E9A),
-          borderRadius: BorderRadius.circular(widget.radius ?? 50),
+          borderRadius: BorderRadius.circular(widget.buttonRadius ?? 20),
+          border: Border.all(color: widget.borderColor ?? const Color(0xFF032E9A), width: 1.3),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -60,7 +63,7 @@ class _SarafuButtonState extends State<SarafuButton> {
             Text(
               widget.title,
               style: TextStyle(
-                fontSize: widget.textSize ?? 16.sp,
+                fontSize: widget.textSize ?? 15.sp,
                 color: widget.textColor,
                 fontWeight: widget.textWeight,
                 fontStyle: widget.fontStyle,
@@ -69,11 +72,7 @@ class _SarafuButtonState extends State<SarafuButton> {
             if (widget.endIcon != null)
               Padding(
                 padding: const EdgeInsets.only(left: 5),
-                child: Icon(
-                  widget.endIcon,
-                  color: Colors.white,
-                  size: 16.sp,
-                ),
+                child: Icon(widget.endIcon, color: Colors.white, size: 16.sp),
               ),
           ],
         ),
